@@ -38,6 +38,11 @@ const SERIES: SeriesItem[] = [
     title: "Embeddings Playground",
     href: "https://embeddings-playground-cat.vercel.app/",
   },
+  {
+    slug: "transformer-playground",
+    title: "Transformer Playground",
+    href: "https://transformer-playground.vercel.app/",
+  },
 ];
 
 type Props = {
