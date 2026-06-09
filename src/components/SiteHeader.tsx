@@ -12,15 +12,19 @@ type Props = {
 export function SiteHeader({ title, repo, modelRepo, children }: Props) {
   return (
     <>
-      <header className="mb-3 flex items-baseline justify-between gap-4 flex-wrap">
-        <h1 className="text-3xl font-bold tracking-tight font-display">{title}</h1>
+      <header className="mb-3 flex flex-wrap items-baseline justify-between gap-4">
+        <h1 className="font-display text-3xl font-bold tracking-tight">
+          {title}
+        </h1>
         <div className="flex items-center gap-3 text-xs text-gray-400 dark:text-zinc-500">
           <ThemeToggle />
           <CreditLine repo={repo} modelRepo={modelRepo} />
         </div>
       </header>
       {children && (
-        <p className="text-sm text-gray-600 dark:text-zinc-400 mb-5">{children}</p>
+        <p className="mb-5 text-sm text-gray-600 dark:text-zinc-400">
+          {children}
+        </p>
       )}
     </>
   );

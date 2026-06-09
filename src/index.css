@@ -2,7 +2,13 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  font-family: "Geist", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-family:
+    "Geist",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
   color-scheme: light;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -12,12 +18,17 @@ html.dark {
   color-scheme: dark;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
   margin: 0;
 }
 
-.font-mono, code, pre, input[type="number"] {
+.font-mono,
+code,
+pre,
+input[type="number"] {
   font-family: "Geist Mono", ui-monospace, Consolas, monospace;
 }
 

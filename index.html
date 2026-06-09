@@ -3,15 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Soundscape</title>
-    <meta name="description" content="25,000 FMA tracks visualized as CLAP audio embeddings reduced to 2D/3D with UMAP" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Embeddings Playground</title>
+    <meta
+      name="description"
+      content="What an embedding is, from one audio clip to 25,000 tracks you can explore and play"
+    />
     <script>
       (function () {
         try {
-          var stored = localStorage.getItem('theme');
-          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-          if (stored === 'dark' || (!stored && prefersDark)) {
-            document.documentElement.classList.add('dark');
+          var stored = localStorage.getItem("theme");
+          var prefersDark = window.matchMedia(
+            "(prefers-color-scheme: dark)",
+          ).matches;
+          if (stored === "dark" || (!stored && prefersDark)) {
+            document.documentElement.classList.add("dark");
           }
         } catch (e) {}
       })();

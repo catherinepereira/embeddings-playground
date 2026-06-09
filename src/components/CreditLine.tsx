@@ -15,7 +15,9 @@ export function CreditLine({ repo, modelRepo }: Props) {
         {modelRepo && (
           <>
             , model at{" "}
-            <Link href={`https://github.com/catherinepereira/${modelRepo}`}>{modelRepo}</Link>
+            <Link href={`https://github.com/catherinepereira/${modelRepo}`}>
+              {modelRepo}
+            </Link>
           </>
         )}
       </span>
@@ -25,7 +27,7 @@ export function CreditLine({ repo, modelRepo }: Props) {
 
 function Link({ href, children }: { href: string; children: React.ReactNode }) {
   return (
-    <span className="text-gray-500 dark:text-zinc-400 underline">
+    <span className="text-gray-500 underline dark:text-zinc-400">
       <a href={href} target="_blank" rel="noopener noreferrer">
         {children}
       </a>
