@@ -36,7 +36,7 @@ const SERIES: SeriesItem[] = [
   {
     slug: "embeddings-playground",
     title: "Embeddings Playground",
-    href: "https://embeddings-playground.vercel.app/",
+    href: "https://embeddings-playground-cat.vercel.app/",
   },
 ];
 
