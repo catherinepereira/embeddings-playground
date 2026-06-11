@@ -1,5 +1,4 @@
 import { SiteHeader } from "@/components/SiteHeader";
-import { SeriesNav } from "@/components/SeriesNav";
 import { References } from "@/components/References";
 import { WhatIsAnEmbedding } from "@/sections/WhatIsAnEmbedding";
 import { HowVectorsAreMade } from "@/sections/HowVectorsAreMade";
@@ -69,8 +68,6 @@ export default function App() {
             do the same for pictures.
           </p>
         </SiteHeader>
-
-        <SeriesNav currentSlug="embeddings-playground" />
 
         <main className="mt-12 flex flex-col gap-12">
           <ExploreSection />
