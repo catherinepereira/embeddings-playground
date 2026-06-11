@@ -5,7 +5,7 @@ import path from "node:path";
 
 // Pick a unique port for each site so multiple `npm run dev` instances coexist.
 // Assigned ports live in ../readme.md (5500-5510). Bump the highest when adding a site.
-const DEV_FRONTEND_PORT = 5511;
+const DEV_FRONTEND_PORT = 5522;
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
